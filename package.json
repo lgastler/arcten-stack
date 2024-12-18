@@ -9,8 +9,6 @@
 	"scripts": {
 		"execute": "tsx",
 		"clean": "git clean -fdX --exclude=\"!.env\"",
-		"script": "tsx scripts/setup.ts",
-		"cleanup": "pnpm run script scripts/cleanup.ts",
 		"build": "react-router build",
 		"dev": "react-router dev",
 		"start": "NODE_ENV=production node ./build/server/index.js",
