@@ -5,12 +5,12 @@ COPY . /app
 FROM dependencies-env AS development-dependencies-env
 COPY ./package.json pnpm-lock.yaml /app/
 WORKDIR /app
-RUN pnpm i --frozen-lockfile && pnpm rebuild
+RUN pnpm i --frozen-lockfile --ignore-scripts
 
 FROM dependencies-env AS production-dependencies-env
 COPY ./package.json pnpm-lock.yaml /app/
 WORKDIR /app
-RUN pnpm i --prod --frozen-lockfile && pnpm rebuild
+RUN pnpm i --prod --frozen-lockfile --ignore-scripts
 
 FROM dependencies-env AS build-env
 COPY ./package.json pnpm-lock.yaml /app/
