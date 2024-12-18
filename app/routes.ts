@@ -1,7 +1,4 @@
-import {
-  type RouteConfig,
-  route,
-} from "@react-router/dev/routes";
+import { type RouteConfig, route } from "@react-router/dev/routes"
 
 const miscRoutes = [
 	route("/robots.txt", "./routes/misc/robots-txt.ts"),
@@ -9,12 +6,6 @@ const miscRoutes = [
 	route("/sitemap/:lang.xml", "./routes/misc/sitemap-lang.ts"),
 ]
 
-const resourcesRoutes = [
-	route("/resource/locales", "./routes/resources/locales.ts"),
-]
+const resourcesRoutes = [route("/resource/locales", "./routes/resources/locales.ts")]
 
-export default [
-	...miscRoutes,
-	...resourcesRoutes,
-	route("/", "./routes/index/index.tsx"),
-] satisfies RouteConfig
+export default [...miscRoutes, ...resourcesRoutes, route("/", "./routes/index/index.tsx")] satisfies RouteConfig

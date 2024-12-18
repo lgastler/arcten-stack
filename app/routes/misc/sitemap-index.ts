@@ -8,7 +8,7 @@ export const loader = async ({ request }: Route.LoaderArgs) => {
 		{
 			url: `${domain}/sitemap/en.xml`,
 			lastmod: "2024-07-17",
-		}
+		},
 	])
 
 	return new Response(sitemaps, {

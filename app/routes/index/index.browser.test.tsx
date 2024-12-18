@@ -32,8 +32,6 @@ describe("Home route", () => {
 			},
 			matches: [],
 		})
-		expect(meta).toEqual([
-			{ title: "arcten" },
-		])
+		expect(meta).toEqual([{ title: "arcten" }])
 	})
 })

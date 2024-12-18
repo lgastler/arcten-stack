@@ -13,5 +13,5 @@ export type Namespace = keyof Resource
 export const resources: Record<Language, Resource> = {
 	en: {
 		common: english,
-	}
+	},
 }
