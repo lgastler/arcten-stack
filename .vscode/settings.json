@@ -24,7 +24,28 @@
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"editor.defaultFormatter": "biomejs.biome",
-	"[javascript][typescript][typescriptreact][javascriptreact][json][jsonc][vue][astro][svelte][css][graphql]": {
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[graphql]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"typescript.tsdk": "node_modules/typescript/lib",
